@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+
+  const navigate = useNavigate();
   return (
     <div>
 
@@ -26,6 +29,8 @@ const Contact = () => {
   aliquyam est duo. Diam rebum aliquyam clita ipsum takimata ea labore
   tempor stet. Duo stet.
 </p>
+{/* redirect */}
+<button onClick={() => { navigate("/")}}>Go To Home Page</button>
       
     </div>
   )
