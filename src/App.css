@@ -37,7 +37,7 @@
   }
 }
 
-nav{
+nav {
   height: 10vh;
   background-color: #282c34;
   display: flex;
@@ -45,19 +45,43 @@ nav{
   align-items: center;
 }
 
-.nav-link{
+.nav-link {
   color: white;
-  
   margin: 1rem;
   text-decoration: none;
 }
-.nav-link:hover{
 
+.nav-link:hover {
   color: chocolate;
-
 }
-nav .active{
-
+nav .active {
   color: red;
+}
 
+section {
+  display: grid;
+  grid-gap: 1rem;
+}
+article {
+  background-color: lightblue;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+}
+.link:hover {
+  color: black;
 }
