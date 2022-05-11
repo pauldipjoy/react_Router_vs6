@@ -4,6 +4,7 @@ import { blogsData } from "../data";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState(blogsData);
+  //console.log(blogs);
 
 // Method
 const truncateString = (str , num) =>{
@@ -28,7 +29,7 @@ const truncateString = (str , num) =>{
                 <strong>{title}</strong>
               </h3>
               <p>{truncateString(body, 100)}</p>
-              <Link to={title} className= "link">Learn More</Link>
+              <Link to={title} className= "link" state={{id, title, body}}>Learn More</Link>
             </article>
           );
         })}

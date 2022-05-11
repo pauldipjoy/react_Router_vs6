@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 
+
 function App() {
   return (
     <BrowserRouter>
